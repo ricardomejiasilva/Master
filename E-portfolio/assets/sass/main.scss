@@ -1,0 +1,109 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+.container{
+  font-family: montserrat;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  #menu{
+    display: inline-block;
+    width: 120px;
+    background-color: white !important;
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+      max-width: 120px;
+    .side-bar{
+      text-align: center;
+      background-color: #fffff;
+      position: sticky;
+      left: 0;
+      // background-color: white;
+      img{
+        width: 100%;
+      }
+      .name{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        padding: 10px 0;
+        color: white;
+        background-color: #03aecc;
+        h3{
+          width: 100%;
+        }
+      }
+      nav{
+        width: 100%;
+        ul{
+          .home{
+            padding: 22px 30px;
+            border-bottom: solid 1px black;
+            i{
+              font-size: 30px;
+              padding-bottom: 10px;
+            }
+            .fas, .fa-home{
+              color: #cfb12e;
+            }
+          }
+          .skills{
+            padding: 22px 30px;
+            border-bottom: solid .5px black;
+            i{
+              padding-bottom: 10px;
+              font-size: 25px;
+              color: #03aecc;
+            }
+          }
+          .portfolio{
+            padding: 22px 10px;
+            border-bottom: solid 1px black;
+            i{
+              padding-bottom: 10px;
+              font-size: 25px;
+              color: #03aecc;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .main{
+    background-image: url("https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-left: 120px;
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .heading {
+      position: absolute;
+      width: 100%;
+      bottom: 100px;
+      left: 0px;
+      overflow: hidden;
+      color: white;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+      h1{
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      h4{
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+

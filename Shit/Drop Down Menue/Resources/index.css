@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(./Images/high-end-video-productions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+nav p {
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+    font-weight: 300;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    line-height: 55px;
+    position: relative;
+    
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 16px;
+    padding: 0px 20PX;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li  {
+    width: 180px;
+
+}
+
+nav ul li ul li a {
+    padding: 8px 20PX;
+
+}
+
+nav ul li ul li:hover {
+    background-color: #f3f3f3;
+    
+
+}

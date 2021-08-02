@@ -1,0 +1,23 @@
+package com.exceptionhandling;
+
+import java.util.Scanner;
+
+public class FinallyRUnner {
+
+	public static void main(String[] args) {
+		try {
+		Scanner scanner = new Scanner(System.in);
+		int[] numbers = { 12, 3, 4, 5 };
+
+		int number = numbers[5];
+
+		System.out.println("before Scanner Close");
+
+		scanner.close();
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+
+	}
+
+}

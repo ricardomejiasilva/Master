@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;arrays.StudentRunner.main(...).marks&apos; in &apos;arrays.StudentRunner.main(...)&apos;&#x0D;&#x0A;- Original project: &apos;arrays&apos;&#x0D;&#x0A;- Original element: &apos;arrays.StudentRunner.main(...).marks&apos;" description="Inline local variable &apos;marks&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;arrays{StudentRunner.java" selection="204 5" stamp="1620679615642" version="1.0"/>
+</session>

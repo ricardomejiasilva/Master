@@ -1,0 +1,160 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  /*  NAVIGATION */
+  
+  main {
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 16px;
+}
+
+header nav ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header .header-cases {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0 ; 
+        text-align: left;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111 ;
+        float: left;
+        line-height: 38px;
+    }
+    
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+    
+    header nav ul li a {
+        line-height: 60px;
+    }
+
+    header .header-cases {
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        font-weight: 900;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1.5px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
+  
+  /*  PORTFOLIO */
+
+  .content-wrapper {
+      padding-top: 100px;
+  }
+  
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .portfolio-item-wrapper {
+    position: relative;
+  }
+  
+  .portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.portfolio-item-wrapper .portfolio-img-background {
+    transition: 1s;
+}
+
+.portfolio-item-wrapper:hover .portfolio-img-background {
+    filter: brightness(10%);
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}

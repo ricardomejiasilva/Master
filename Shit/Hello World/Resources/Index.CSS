@@ -1,0 +1,68 @@
+.navbar {
+    background-color: white; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background-color: #FF2C2C;
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#small-mario {
+    height: 200px;
+    width:100px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.mario-section {
+    padding: 20px 50px;
+}
+
+#mario {
+    color: #FF2C2C;
+    font-size: 100px;
+}
+
+#greets ul {
+    list-style-type: none;
+}
+
+.avatar {
+    background-image: url(../Resources/Images/char-mario.png);
+    background-size: cover;
+    height: 100px;
+    width: 50px;
+    border: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 5px solid white;
+}
+
+.bold {
+    font-weight: 900;
+    
+}
+
+.padding {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+a.red {
+    color:red;
+}

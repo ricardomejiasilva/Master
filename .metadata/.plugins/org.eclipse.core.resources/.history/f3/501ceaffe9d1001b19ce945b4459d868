@@ -1,0 +1,17 @@
+package com.tips.and.trics;
+
+import java.math.BigDecimal;
+import static java.lang.System.out;
+
+public class ImportsRunner {
+
+	public static void main(String[] args) {
+		
+		out.println("Imports");
+		
+		
+		BigDecimal db = null;
+
+	}
+
+}

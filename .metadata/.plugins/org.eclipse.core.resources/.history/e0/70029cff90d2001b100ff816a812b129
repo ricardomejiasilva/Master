@@ -1,0 +1,23 @@
+package com.in28mins.learnspring.game;
+
+public class GameRunner {
+
+	private MarioGame game;
+
+	public GameRunner(MarioGame game) {
+		this.game = game;
+	}
+
+	public void rungame() {
+		game.up();
+		game.down();
+		game.left();
+		game.right();
+	}
+
+}
+
+//public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}

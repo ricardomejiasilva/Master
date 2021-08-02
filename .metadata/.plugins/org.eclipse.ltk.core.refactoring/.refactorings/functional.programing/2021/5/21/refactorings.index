@@ -1,0 +1,4 @@
+1621458866971	Extract method 'printBasic'
+1621462836934	Extract method 'normlaSum'
+1621463240952	Extract method 'fPSum'
+1621464154888	Inline local variable 'sum'

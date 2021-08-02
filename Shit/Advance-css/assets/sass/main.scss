@@ -1,0 +1,76 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: black;
+  height: 700px;
+  align-items: flex-start;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  align-self: flex-start;
+}
+
+.box2 {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+  border: 1px solid black;
+  align-self: baseline;
+}
+
+.box3 {
+  width: 150px;
+  height: 250px;
+  background-color: yellow;
+  border: 1px solid black;
+  align-self: flex-end;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  align-self: stretch;
+}
+
+.box5 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.box6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}

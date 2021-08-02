@@ -1,0 +1,93 @@
+"use strict";
+
+var _shoppingCart = _interopRequireWildcard(require("./shoppingCart.js"));
+
+var _cloneDeep = _interopRequireDefault(require("./node_modules/lodash-es/cloneDeep.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+// Importing Module
+// import {
+//   addToCart,
+//   totalPrice as price,
+//   tq,
+// } from './shoppingCart.js';
+// addToCart('bread', 5);
+// console.log(price, tq);
+// console.log(shippingCost)
+// console.log('Importing Module');
+// import * as ShoppingCart from './shoppingCart.js'
+// ShoppingCart.addToCart('bread', 5)
+// import add, {addToCart, totalPrice as price,tq,} from './shoppingCart.js'
+(0, _shoppingCart.default)('pizza', 2);
+(0, _shoppingCart.default)('bread', 2);
+(0, _shoppingCart.default)('pie', 2);
+console.log(_shoppingCart.cart);
+/*
+const shoppingCart2 = (function(){
+  const cart = [];
+  const shippingCost = 10
+  const totalPrice = 237;
+  const totalQuantity =23;
+
+  const addToCart = function(product, quantity){
+    cart.push({product, quantity})
+    console.log(`${quantity} ${product} added to cart`)
+  }
+
+  const orderStock = function(product, quantity){
+    console.log(`${quantity} ${product} ordered from supplier`)
+  }
+
+  return {
+    addToCart,
+    cart,
+    totalPrice,
+    totalQuantity,
+  }
+})()
+
+shoppingCart2.addToCart('apple', 4)
+shoppingCart2.addToCart('pizza', 2)
+console.log(shoppingCart2)
+console.log(shoppingCart2.ode)
+*/
+
+/*
+// NPM common js import/export
+//Export
+export.addToCart = function(product, quantity){
+  cart.push({product, quantity})
+  console.log(`${quantity} ${product} added to cart`)
+}
+
+// Import 
+const { addToCart} = require('./shoppingCart.js')
+*/
+
+const state = {
+  cart: [{
+    product: 'bread',
+    quantity: 5
+  }, {
+    product: 'pizza',
+    quantity: 5
+  }],
+  user: {
+    loggedIn: true
+  }
+};
+const stateClone = Object.assign({}, state);
+const stateDeepClone = (0, _cloneDeep.default)(state);
+state.user.loggedIn = false;
+console.log(stateClone);
+console.log(stateDeepClone);
+console.log('live');
+
+if (module.hot) {
+  module.hot.acc;
+}

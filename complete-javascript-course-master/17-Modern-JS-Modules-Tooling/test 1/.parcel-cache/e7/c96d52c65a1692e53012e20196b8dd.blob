@@ -1,0 +1,34 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = _default;
+exports.tq = exports.totalPrice = exports.addToCart = exports.cart = void 0;
+// Exporting Module
+console.log('Exporting Module');
+const shippingCost = 10;
+const cart = [];
+exports.cart = cart;
+
+const addToCart = function (product, quantity) {
+  cart.push({
+    product,
+    quantity
+  });
+  console.log(`${quantity} ${product} added to cart`);
+};
+
+exports.addToCart = addToCart;
+const totalPrice = 237;
+exports.totalPrice = totalPrice;
+const totalQuantity = 23;
+exports.tq = totalQuantity;
+
+function _default(product, quantity) {
+  cart.push({
+    product,
+    quantity
+  });
+  console.log(`${quantity} ${product} added to cart`);
+}

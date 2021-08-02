@@ -1,0 +1,14 @@
+.container{
+  height: 100%;
+  width: 100%;
+  font-size: 48px;
+}
+
+img{
+  height: 30px;
+  width: 30px;
+}
+
+p{
+  color: red;
+}

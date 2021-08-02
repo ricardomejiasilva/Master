@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java-new-api-features/sources/Untitled 1&apos; to &apos;sample.txt&apos;" description="Rename resource &apos;Untitled 1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sources/Untitled 1" name="sample.txt" stamp="1624273735001" updateReferences="true"/>
+</session>

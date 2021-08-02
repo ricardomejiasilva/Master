@@ -1,0 +1,11 @@
+package com.exceptionhandling;
+
+public class ExeceptionHandlingRunner {
+
+	public static void main(String[] args) {
+		String str = null;
+		str.length();
+
+	}
+
+}
