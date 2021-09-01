@@ -27,6 +27,7 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
+
         <div className='links-container' ref={linksContainerRef}>
           <ul className='links' ref={linksRef}>
             {links.map((link) => {
@@ -39,6 +40,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
+        
         <ul className='social-icons'>
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;

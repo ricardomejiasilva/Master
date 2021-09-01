@@ -14,6 +14,7 @@ function App() {
   const [person, setPerson] = useState(null)
   const [value, setValue] = useState('random person')
   const [title, setTitle] = useState('name')
+  
   const getPerson = async () => {
     setLoading(true)
     const response = await fetch(url)
@@ -48,6 +49,7 @@ function App() {
   useEffect(() => {
     getPerson()
   }, [])
+  
   const handleValue = (e) => {
     if (e.target.classList.contains('icon')) {
       const newValue = e.target.dataset.label
